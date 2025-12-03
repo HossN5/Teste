@@ -358,8 +358,9 @@ section {
   animation: fadeInUp 0.6s ease-out;
   /* Changed from two equal columns to image-left content-right layout */
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 0;
+  grid-template-columns: 0.85fr 1.3fr; /* Adjusted grid proportions - reduced image column from 1fr to 0.85fr */
+  /* Increased gap between image and text content from 0 to 40px */
+  gap: 40px;
   align-items: stretch;
 }
 
@@ -374,7 +375,7 @@ section {
   cursor: pointer;
   /* Image container now takes full height, no margin */
   height: 100%;
-  min-height: 450px;
+  min-height: 380px; /* Reduced min-height from 450px to 380px for smaller image size */
   margin: 0;
   border-radius: 15px 0 0 15px;
   transition: all 0.3s ease;
@@ -404,7 +405,8 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
-  padding: 40px; /* Added proper spacing between image and text content */
+  /* Increased padding to provide more breathing room for text content */
+  padding: 50px 50px 50px 0;
 }
 
 .project-info h3 {
