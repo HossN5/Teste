@@ -147,14 +147,12 @@ footer {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  /* Changed from center to flex-start to align content to the left */
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 80px 20px;
   gap: 60px;
 }
 
 .hero-content {
-  /* Removed auto margins and reduced max-width to align with header branding */
   max-width: 600px;
   animation: fadeInUp 1s ease-out;
   flex: 1;
