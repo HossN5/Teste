@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derick Antônio - Analista de Dados</title>
+    <!-- Added Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Navigation -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <!-- Modern heading typography -->
+                <h1>Derick Antônio</h1>
+                <span class="subtitle">Analista de Dados</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <!-- Enhanced hero title with better typography -->
+            <h2 class="hero-title">Transformando Dados em Decisões Estratégicas</h2>
+            <!-- Improved subtitle text and styling -->
+            <p class="hero-subtitle">Transformo dados complexos em insights estratégicos que impulsionam decisões de negócio e geram valor mensurável.</p>
+            <button class="cta-button" onclick="document.querySelector('#projects').scrollIntoView({behavior: 'smooth'})">
+                Ver Projetos
+            </button>
+        </div>
+        <div class="hero-socials">
+            <a href="https://linkedin.com/in/derick-antonio" target="_blank" class="social-icon linkedin" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/HossN5" target="_blank" class="social-icon github" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:derickanttonio@gmail.com" class="social-icon gmail" title="Gmail">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <!-- Improved section title typography -->
+            <h2 class="section-title">Sobre Mim</h2>
+            <!-- Enhanced description text -->
+            <p class="section-description">Analista de Dados e especialista em Business Intelligence, transformo grandes volumes de dados em insights estratégicos que impulsionam decisões negociais. Com expertise em ferramentas modernas e metodologias ágeis, crio dashboards intuitivos e análises profundas.</p>
+            
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="power-bi">
+                    <div class="skill-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Power BI</h3>
+                    <p class="skill-description">Dashboards interativos e visualizações avançadas</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="excel">
+                    <div class="skill-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <h3>Excel</h3>
+                    <p class="skill-description">Análise de dados, fórmulas avançadas e VBA</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="sql">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>SQL</h3>
+                    <p class="skill-description">Queries complexas, otimização e modelagem</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card" data-skill="python">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p class="skill-description">Pandas, análise estatística e automação</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <p class="section-description">Análises que geram valor e insights estratégicos</p>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <!-- Fixed image path from /images/ to images/ for GitHub Pages -->
+                        <img src="images/deshboardprontovvpdf-page-0001.jpg" alt="Dashboard de Vendas" class="project-image" onclick="openDashboardModal(event)">
+                        <div class="project-overlay">
+                            <span class="click-hint">Clique para detalhes</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard de Vendas - Análise Completa</h3>
+                        <p class="project-description">Análise de vendas em tempo real, abrangendo Faturamento, Custos, Lucro e Margem. Desenvolvido para identificar drivers de receita e otimizar o estoque.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Excel</span>
+                        </div>
+                        <a href="https://github.com/HossN5" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> Ver no GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <!-- Updated contact section title -->
+            <h2 class="section-title">Vamos Conversar?</h2>
+            <p class="section-description">Conecte-se comigo em minhas redes profissionais</p>
+            
+            <div class="contact-options">
+                <a href="https://linkedin.com/in/derick-antonio" target="_blank" class="contact-card linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Veja meu perfil profissional</p>
+                </a>
+                <a href="https://github.com/HossN5" target="_blank" class="contact-card github">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <p>Explore meus projetos</p>
+                </a>
+                <a href="mailto:derickanttonio@gmail.com" class="contact-card gmail">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>derickanttonio@gmail.com</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Derick Antônio. Todos os direitos reservados.</p>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/derick-antonio" target="_blank" class="footer-social">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/HossN5" target="_blank" class="footer-social">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:derickanttonio@gmail.com" class="footer-social">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Dashboard -->
+    <div id="dashboardModal" class="modal">
+        <div class="modal-content dashboard-modal">
+            <button class="close-modal" onclick="closeDashboardModal()">&times;</button>
+            
+            <div class="modal-header">
+                <!-- Updated modal header to show full dashboard image without cropping -->
+                <img src="/images/deshboardprontovvpdf-page-0001.jpg" alt="Dashboard Vendas Completo" class="modal-dashboard-image">
+            </div>
+
+            <div class="modal-body">
+                <h2>Análise de Vendas - Dashboard Completo</h2>
+                
+                <div class="analysis-section">
+                    <h3>Resumo Executivo</h3>
+                    <div class="kpi-grid">
+                        <!-- Added accent-highlight class to first KPI for visual emphasis -->
+                        <div class="kpi-item accent-highlight">
+                            <span class="kpi-label">Total de Vendas</span>
+                            <span class="kpi-value">R$ 3.1 Mi</span>
+                        </div>
+                        <div class="kpi-item">
+                            <span class="kpi-label">Custos Totais</span>
+                            <span class="kpi-value">R$ 1.77 Mi</span>
+                        </div>
+                        <div class="kpi-item">
+                            <span class="kpi-label">Lucro</span>
+                            <span class="kpi-value">R$ 1.09 Mi</span>
+                        </div>
+                        <!-- Added special styling to highlight the 35% margin -->
+                        <div class="kpi-item margin-highlight">
+                            <span class="kpi-label">Margem Global</span>
+                            <span class="kpi-value">35%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Destaques Estratégicos</h3>
+                    <div class="highlights-grid">
+                        <div class="highlight-item">
+                            <h4>Liderança em Vendas</h4>
+                            <p>Mountain Bikes geram R$ 1.9M em faturamento com R$ 710K de lucro (37% de margem), sendo o maior driver de receita do portfolio.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h4>Oportunidade de Melhoria</h4>
+                            <p>Jerseys apresentam a menor margem (15%) - necessária revisão urgente de precificação e negociação com fornecedores para melhorar rentabilidade.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h4>Padrão Sazonal</h4>
+                            <p>Pico de vendas em Março/2023 (R$ 336K) confirma sazonalidade. Planejar inventário e promoções estratégicas em períodos similares.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h4>Desempenho Secundário</h4>
+                            <p>Road Bikes (31%) e Touring Bikes (30%) mantêm boa margem. Gloves e Helmets têm volume menor mas alta lucratividade relativa (55%).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analysis-section">
+                    <h3>Recomendações Estratégicas</h3>
+                    <ul class="recommendations-list">
+                        <li><strong>Maximizar Mountain Bikes:</strong> Já é o carro-chefe. Investir em estoque, marketing segmentado e descontos graduais.</li>
+                        <li><strong>Revisar Jerseys:</strong> Produto com margem crítica. Renegociar com fornecedores ou aumentar preço conforme volume.</li>
+                        <li><strong>Planejar Sazonalidade:</strong> Preparar campanhas antecipadas 2 meses antes dos períodos de pico identificados.</li>
+                        <li><strong>Cross-sell:</strong> Promover itens de alta margem (Helmets, Gloves) em bundle com bikes para aumentar ticket médio.</li>
+                        <li><strong>Análise Competitiva:</strong> Monitorar Road Bikes e Touring Bikes que têm potencial de crescimento.</li>
+                    </ul>
+                </div>
+
+                <div class="modal-actions">
+                    <a href="https://github.com/HossN5" target="_blank" class="action-button github-btn">
+                        <i class="fab fa-github"></i> Ver no GitHub
+                    </a>
+                    <button class="action-button close-btn" onclick="closeDashboardModal()">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
