@@ -716,6 +716,37 @@ section {
   letter-spacing: 0.2px;
 }
 
+/* Added special styling for 35% margin KPI highlight */
+.kpi-item.margin-highlight {
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.2) 0%, rgba(255, 165, 89, 0.15) 100%);
+  border: 2px solid var(--accent);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.kpi-item.margin-highlight::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 107, 53, 0.1), transparent);
+  animation: shimmer 3s infinite;
+}
+
+.kpi-item.margin-highlight:hover {
+  border-color: var(--accent-light);
+  box-shadow: 0 12px 35px rgba(255, 107, 53, 0.35);
+  transform: translateY(-8px) scale(1.02);
+}
+
+.kpi-item.margin-highlight .kpi-value {
+  color: var(--accent-light);
+  font-size: 1.8rem;
+}
+
 .highlights-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -867,6 +898,15 @@ section {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
