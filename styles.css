@@ -147,14 +147,12 @@ footer {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  /* Changed from center to flex-start to align content to the left */
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 80px 20px;
   gap: 60px;
 }
 
 .hero-content {
-  /* Removed auto margins and reduced max-width to align with header branding */
   max-width: 600px;
   animation: fadeInUp 1s ease-out;
   flex: 1;
@@ -356,12 +354,11 @@ section {
   border: 1px solid var(--border-color);
   border-radius: 15px;
   overflow: hidden;
-  /* Added smooth transition for card hover animation */
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s ease;
   animation: fadeInUp 0.6s ease-out;
   /* Changed from two equal columns to image-left content-right layout */
   display: grid;
-  grid-template-columns: 0.85fr 1.3fr; /* Adjusted grid proportions - reduced image column from 1fr to 0.85fr */
+  grid-template-columns: 1fr 1.2fr;
   /* Increased gap between image and text content from 0 to 40px */
   gap: 40px;
   align-items: stretch;
@@ -370,8 +367,6 @@ section {
 .project-card:hover {
   border-color: var(--accent);
   box-shadow: 0 20px 50px rgba(255, 107, 53, 0.2);
-  /* Added subtle scale effect on card hover for premium feel */
-  transform: scale(1.02);
 }
 
 .project-image-container {
@@ -380,7 +375,7 @@ section {
   cursor: pointer;
   /* Image container now takes full height, no margin */
   height: 100%;
-  min-height: 380px; /* Reduced min-height from 450px to 380px for smaller image size */
+  min-height: 450px;
   margin: 0;
   border-radius: 15px 0 0 15px;
   transition: all 0.3s ease;
@@ -391,8 +386,6 @@ section {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
-  /* Added subtle drop-shadow to dashboard image */
-  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
 }
 
 .project-image-container:hover .project-image {
@@ -451,16 +444,6 @@ section {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   letter-spacing: 0.3px;
-  /* Added transition for smooth hover effect on skill tags */
-  transition: all 0.3s ease;
-}
-
-/* Added hover effect for tech tags with glow and border enhancement */
-.tech-tag:hover {
-  background: rgba(255, 107, 53, 0.25);
-  border-color: var(--accent);
-  box-shadow: 0 0 20px rgba(255, 107, 53, 0.4);
-  transform: translateY(-2px);
 }
 
 .project-link {
