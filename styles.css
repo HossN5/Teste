@@ -147,19 +147,17 @@ footer {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  /* Changed justify-content from space-between to center to bring content more centered */
-  justify-content: center;
+  /* Changed from center to flex-start to align content to the left */
+  justify-content: flex-start;
   padding: 80px 20px;
   gap: 60px;
 }
 
 .hero-content {
-  /* Increased max-width from 600px to 700px and added centered margin for better centering */
-  max-width: 700px;
+  /* Removed auto margins and reduced max-width to align with header branding */
+  max-width: 600px;
   animation: fadeInUp 1s ease-out;
   flex: 1;
-  /* Added horizontal auto margins to center the content block */
-  margin: 0 auto;
 }
 
 .hero-title {
