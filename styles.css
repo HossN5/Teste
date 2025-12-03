@@ -147,12 +147,14 @@ footer {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* Changed from center to flex-start to align content to the left */
+  justify-content: flex-start;
   padding: 80px 20px;
   gap: 60px;
 }
 
 .hero-content {
+  /* Removed auto margins and reduced max-width to align with header branding */
   max-width: 600px;
   animation: fadeInUp 1s ease-out;
   flex: 1;
@@ -354,7 +356,8 @@ section {
   border: 1px solid var(--border-color);
   border-radius: 15px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  /* Added smooth transition for card hover animation */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   animation: fadeInUp 0.6s ease-out;
   /* Changed from two equal columns to image-left content-right layout */
   display: grid;
@@ -367,6 +370,8 @@ section {
 .project-card:hover {
   border-color: var(--accent);
   box-shadow: 0 20px 50px rgba(255, 107, 53, 0.2);
+  /* Added subtle scale effect on card hover for premium feel */
+  transform: scale(1.02);
 }
 
 .project-image-container {
@@ -386,6 +391,8 @@ section {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
+  /* Added subtle drop-shadow to dashboard image */
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.3));
 }
 
 .project-image-container:hover .project-image {
@@ -444,6 +451,16 @@ section {
   font-family: "Inter", sans-serif;
   font-weight: 500;
   letter-spacing: 0.3px;
+  /* Added transition for smooth hover effect on skill tags */
+  transition: all 0.3s ease;
+}
+
+/* Added hover effect for tech tags with glow and border enhancement */
+.tech-tag:hover {
+  background: rgba(255, 107, 53, 0.25);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(255, 107, 53, 0.4);
+  transform: translateY(-2px);
 }
 
 .project-link {
